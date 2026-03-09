@@ -8,3 +8,4 @@ matplotlib
 pillow
 qdarkstyle
 python-multipart
+jinja2

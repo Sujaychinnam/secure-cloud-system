@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Secure Cloud Dashboard</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<h1>Secure Cloud Storage</h1>
+
+<h2>Upload File</h2>
+
+<form action="/upload" method="post" enctype="multipart/form-data">
+
+<input type="file" name="file">
+
+<button type="submit">Upload</button>
+
+</form>
+
+<h2>Blockchain Records</h2>
+
+<table border="1">
+
+<tr>
+<th>Index</th>
+<th>File</th>
+<th>Owner</th>
+<th>Receiver</th>
+</tr>
+
+{% for block in chain %}
+
+<tr>
+<td>{{ block.index }}</td>
+<td>{{ block.file_name }}</td>
+<td>{{ block.owner }}</td>
+<td>{{ block.receiver }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>
