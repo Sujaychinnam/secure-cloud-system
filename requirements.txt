@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+supabase
+cryptography
+tinyec
+bcrypt
+matplotlib
+pillow
+qdarkstyle
